@@ -1,0 +1,7 @@
+// this function will query an API to deliver a random Chuck Norris joke and return it
+function chucknorris()
+{
+  Logger.log("hello world")
+  Logger.log(JSON.parse(UrlFetchApp.fetch("https://api.chucknorris.io/jokes/random")))
+  return JSON.parse(UrlFetchApp.fetch("https://api.chucknorris.io/jokes/random")).value; 
+}
